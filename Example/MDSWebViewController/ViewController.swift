@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MDSWebViewController
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.navigationController?.pushViewController(MDSWebViewController.init(url: "https://www.baidu.com"), animated: true)
     }
 
     override func didReceiveMemoryWarning() {

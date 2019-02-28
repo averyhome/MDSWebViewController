@@ -1,27 +1,23 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - MDSWebViewController (0.1.0)
+  - MDSWebViewController (0.1.0):
+    - SnapKit (~> 4.2.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - MDSWebViewController (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
+    - SnapKit
 
 EXTERNAL SOURCES:
   MDSWebViewController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  MDSWebViewController: e76e5b6d83ad220356678204fd398171f61102f1
+  MDSWebViewController: 2e888035511c95e14aeea13c50442f960bdc1353
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: b95bede24d73014981592a494eb16e304cf9961c
+PODFILE CHECKSUM: a9aeb0192f9a37f8ec0cdaf2e746860644a92c6e
 
 COCOAPODS: 1.5.3

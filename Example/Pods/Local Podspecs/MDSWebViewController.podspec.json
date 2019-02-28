@@ -18,5 +18,14 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MDSWebViewController/Classes/**/*"
+  "source_files": "MDSWebViewController/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "WebKit"
+  ],
+  "dependencies": {
+    "SnapKit": [
+      "~> 4.2.0"
+    ]
+  }
 }
