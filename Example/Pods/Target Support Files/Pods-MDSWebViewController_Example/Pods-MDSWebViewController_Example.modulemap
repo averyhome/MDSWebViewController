@@ -1,0 +1,6 @@
+framework module Pods_MDSWebViewController_Example {
+  umbrella header "Pods-MDSWebViewController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

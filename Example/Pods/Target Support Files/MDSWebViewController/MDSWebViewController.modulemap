@@ -1,0 +1,6 @@
+framework module MDSWebViewController {
+  umbrella header "MDSWebViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
