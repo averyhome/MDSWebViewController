@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MDSWebViewController'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'webViewcontroller,wkwebView,wechat,微信'
 
 # This description is used to generate tags and improve search results.
