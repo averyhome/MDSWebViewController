@@ -15,13 +15,12 @@ public class MDSWebViewController: UIViewController {
     let kvo_title = "title"
     let kvo_estimatedProgress = "estimatedProgress"
     
-    @objc public var urlString: NSString!
-    @objc public var urlStringTest: String!
-    
     var webView = WKWebView.init()
     var progressView = UIProgressView()
     
-    @objc public init(urlStr: NSString!) {
+    @objc public var urlString: String!
+ 
+    @objc public init(urlStr: String!) {
         super.init(nibName: nil, bundle: nil)
         self.urlString = urlStr
     }
@@ -44,8 +43,7 @@ public class MDSWebViewController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-
-        print(urlStringTest)
+        print(urlString)
         self.view.addSubview(webView)
         webView.snp.makeConstraints { (make) in
             if #available(iOS 11.0, *) {

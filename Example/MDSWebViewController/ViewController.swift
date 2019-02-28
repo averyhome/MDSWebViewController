@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a /Users/surpriseforme/git/MDSWebViewController/Example/MDSWebViewController/Base.lproj/LaunchScreen.xibnib.
-        let str: NSString = "https://www.baidu.com" as NSString
+        let str: String = "https://www.baidu.com"
     self.navigationController?.pushViewController(MDSWebViewController.init(urlStr: str), animated: true)
     }
 
