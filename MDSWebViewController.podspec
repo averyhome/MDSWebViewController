@@ -40,5 +40,5 @@ webViewcontroller,base in wkwebView,will be like wechat webView
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'WebKit'
-   s.dependency 'SnapKit', '~> 4.2.0'
+   s.dependency 'SnapKit'
 end
