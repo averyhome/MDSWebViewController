@@ -9,18 +9,21 @@ import WebKit
 import SnapKit
 
 
+
 public class MDSWebViewController: UIViewController {
     
     let kvo_title = "title"
     let kvo_estimatedProgress = "estimatedProgress"
     
+    @objc public var urlString: NSString!
+    @objc public var urlStringTest: String!
+    
     var webView = WKWebView.init()
-    var urlString: String!
     var progressView = UIProgressView()
     
-    public init(url: String!) {
+    @objc public init(urlStr: NSString!) {
         super.init(nibName: nil, bundle: nil)
-        self.urlString = url
+        self.urlString = urlStr
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,6 +45,7 @@ public class MDSWebViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
 
+        print(urlStringTest)
         self.view.addSubview(webView)
         webView.snp.makeConstraints { (make) in
             if #available(iOS 11.0, *) {
@@ -70,7 +74,7 @@ public class MDSWebViewController: UIViewController {
         webView.uiDelegate = self
         webView.navigationDelegate = self
 
-        let request = URLRequest.init(url: URL.init(string: self.urlString)!)
+        let request = URLRequest.init(url: URL.init(string: self.urlString as String)!)
         webView.load(request)
 
     }

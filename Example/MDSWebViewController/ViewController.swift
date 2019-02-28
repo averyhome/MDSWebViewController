@@ -13,8 +13,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.navigationController?.pushViewController(MDSWebViewController.init(url: "https://www.baidu.com"), animated: true)
+        // Do any additional setup after loading the view, typically from a /Users/surpriseforme/git/MDSWebViewController/Example/MDSWebViewController/Base.lproj/LaunchScreen.xibnib.
+        let str: NSString = "https://www.baidu.com" as NSString
+    self.navigationController?.pushViewController(MDSWebViewController.init(urlStr: str), animated: true)
     }
 
     override func didReceiveMemoryWarning() {
